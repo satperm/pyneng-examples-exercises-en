@@ -14,5 +14,8 @@ correct output without getting results from initial data using Python.
 This does not mean that the task was done correctly, it is just that at
 this stage it is difficult otherwise test the result.
 """
-
 mac = "AAAA:BBBB:CCCC"
+result = []
+for i in mac.split(':'):
+    result.append(str(bin(int(i,16)))[2:])
+print(''.join(result))
