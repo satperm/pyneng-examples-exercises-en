@@ -50,3 +50,7 @@ london_co = {
         "routing": True,
     },
 }
+name = input('Enter device name: ')
+keys = tuple(london_co[name].keys())
+param= input('Enter parameter name:{}'.format(keys))
+print(london_co[name][param])
